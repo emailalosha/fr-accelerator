@@ -18,7 +18,7 @@ stages
                     script
                         {
                             
-                           sh 'ls -ltrh'
+                        sh 'docker build -f base-images/Dockerfile -t jdk-11-jenkins-build .'
                            
                         }
                     }
