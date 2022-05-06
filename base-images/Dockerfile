@@ -1,4 +1,4 @@
-FROM redhat/ubi8:8.5-239.1651231664-source
+FROM rhel-ubi:latest
 
 ARG path_tmp=/tmp/java
 
