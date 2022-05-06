@@ -1,3 +1,4 @@
+mkdir -p ${path_tmp} ${JVM_PATH}
 echo "-> Key Variables";
 echo "PATH is $PATH"
 echo "JAVA_HOME is $JAVA_HOME"
