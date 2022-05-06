@@ -1,6 +1,6 @@
 pipeline{
     
-agent () 
+agent (label 'raining-lab-2.reed.com') 
     {
         docker 
             {
