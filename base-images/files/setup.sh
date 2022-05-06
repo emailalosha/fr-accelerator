@@ -15,10 +15,12 @@ echo "-- Done";
 echo "";
 
 echo "Present working directory - `pwd`"
-curl https://awsdevopsartifactory.jfrog.io/artifactory/FRDS/openjdk-11%2B28_linux-x64_bin.tar.gz -o "${path_tmp}/jdk.tar.gz"
+curl https://awsdevopsartifactory.jfrog.io/artifactory/FRDS/openjdk-11%2B28_linux-x64_bin.tar.gz -O "${path_tmp}/jdk.tar.gz"
 
-echo "-> Installing Java";
-tar -xf ${path_tmp}/jdk.tar.gz -C ${JVM_PATH}/
+echo "-> Installing Java at ${JVM_PATH}";
+tar -zxvf ${path_tmp}/jdk.tar.gz -C ${JVM_PATH}/
+echo "-> all details";
+ls -ltrh ${path_tmp} ; ls -ltrh ${JVM_PATH}
 echo "-- Done";
 echo "";
 
