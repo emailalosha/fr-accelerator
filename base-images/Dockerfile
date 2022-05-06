@@ -15,7 +15,7 @@ SHELL ["/bin/bash", "-c"]
 # Copy required files
 # -------------------
 
-COPY files/setup.sh ${path_tmp}/
+COPY base-images/files/setup.sh ${path_tmp}/
 # Required for GCP only
 # COPY files/gcp-gcs-service-account.json ${path_tmp}/
 
