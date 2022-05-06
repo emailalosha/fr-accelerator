@@ -18,7 +18,7 @@ stages
                     script
                         {
                             
-                           
+                           sh 'ls -ltrh'
                            
                         }
                     }
