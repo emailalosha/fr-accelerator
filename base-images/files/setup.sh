@@ -16,8 +16,8 @@ echo "-- Done";
 echo "";
 
 echo "Present working directory - `pwd`"
-curl "https://awsdevopsartifactory.jfrog.io/artifactory/FRDS/openjdk-1128_linux-x64_bin.tar.gz" -O "${path_tmp}/jdk.tar.gz"
-
+curl -LO "https://awsdevopsartifactory.jfrog.io/artifactory/FRDS/openjdk-1128_linux-x64_bin.tar.gz"
+mv openjdk-1128_linux-x64_bin.tar.gz ${path_tmp}/jdk.tar.gz
 echo "-> Installing Java at ${JVM_PATH}";
 tar -zxvf ${path_tmp}/jdk.tar.gz -C ${JVM_PATH}/
 echo "-> all details";
